@@ -9,13 +9,13 @@ public class Enemy : MonoBehaviour
     public Sprite[] sprites;
 
     SpriteRenderer spriteRenderer;
-    Rigidbody2D rigid;
+    
+    
 
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        rigid = GetComponent<Rigidbody2D>();
-        rigid.velocity = Vector2.down * speed;
+        
     }
 
     void OnHit(int dmg)
