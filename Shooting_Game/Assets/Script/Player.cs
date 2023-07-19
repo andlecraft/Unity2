@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public bool isTouchBottom;
     public bool isTouchLeft;
     public bool isTouchRight;
+    private int aaa;
 
     //ÃÑ¾Ë º¯¼ö
     public GameObject bulletObjA;
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour
     Animator anim;
     void Awake()
     {
+        aaa++;
         anim = GetComponent<Animator>();
     }
 
