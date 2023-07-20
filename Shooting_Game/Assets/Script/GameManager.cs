@@ -25,9 +25,7 @@ public class GameManager : MonoBehaviour
     {
         int ranEnemy = Random.Range(0, 3);
         int ranPoint = Random.Range(0, 9);
-        GameObject enemy = Instantiate(enemyObjs[ranEnemy],
-            spawnPoint[ranPoint].position,
-            spawnPoint[ranPoint].rotation);
+        GameObject enemy = Instantiate(enemyObjs[ranEnemy],spawnPoint[ranPoint].position,spawnPoint[ranPoint].rotation);
         
         
          Rigidbody2D rigid = enemy.GetComponent<Rigidbody2D>();
